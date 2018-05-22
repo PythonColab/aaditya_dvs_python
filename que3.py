@@ -1,7 +1,6 @@
 fp=open("F:\\curr.txt","r+")
-b=fp.read()
-fp.close()
-a=int(input("choose the initial currency in which the amount is curretly exist:\n press\n 1) INR(Rupee)\n 2) USD(American doller 3) Euro)")
+b=float(fp.read())
+a=int(input("choose the initial currency in which the amount is curretly exist:\n press\n 1) INR(Rupee)\n 2) USD(American doller \n 3) Euro)"))
 if a==1:
 	c=int(input("convert INR to\n 1) USD 2) Euro"))
 elif a==2 :
@@ -10,24 +9,26 @@ elif a==3 :
 	c=int(input("convert Euro to\n 1) USD 2) INR"))
 else:
 	print("invalid input")
-if a=1 and c=1 :
+if a==1 and c==1 :
 	d=b/65
 	print("USD:",d)
-elif a=1 and c=2 :
+elif a==1 and c==2 :
 	d=b/80
 	print("Euro:",d)
-elif a=2 and c=1 :
+elif a==2 and c==1 :
 	d=b*65
 	print("INR:",d)
-elif a=2 and c=2 :
+elif a==2 and c==2 :
 	d=b*1.18
 	print("Euro:",d)
-elif a=3 and c=1 :
+elif a==3 and c==1 :
 	d=b/1.18
 	print("USD:",d)
-elif a=3 and c=2 :
+elif a==3 and c==2 :
 	d=b*80
 	print("INR:",d)
+else:
+	print("invalid")
 fp.close()
 fp=open("F:\\opcurr.txt","a+")
 fp.write("%d:"%d)
