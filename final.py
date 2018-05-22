@@ -1,3 +1,5 @@
+option=1
+while (option==1 or option==2 or option==3):
 def bmi():
 	n=input("enter user name")
 	a=float(input("enter your weight in kg"))
